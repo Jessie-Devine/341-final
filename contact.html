@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Contact plants.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body>
+    <ul class=nav>    
+        <li class=navli><a href="https://jessie-devine.github.io/341-final/">home</a></li>
+    </ul>
+    
+
+ 
+    
+<div class="email">
+  <form action="/action_page.php">
+    <label for="first">First Name</label>
+    <input type="text" id="first" name="firstname" placeholder="What should we call you?">
+    <label for="last">Last Name</label>
+    <input type="text" id="last" name="lastname" placeholder="I guess we need this too.">
+    <label for="habitat">Habitat</label>
+    <select id="habitat" name="habitat" onchange="if (this.value=='other'){this.form['other'].style.visibility='visible'}else {this.form['other'].style.visibility='hidden'};">
+        <option value="" selected="selected">Pick one.</option>
+        <option value="Desert">Desert</option>
+        <option value="Rainforest">Rainforest</option>
+        <option value="Rainforest">Temperate</option>
+        <option value="Underwater">Underwater</option>
+        <option value="other">Somewhere else?</option>
+    </select>
+      <input type="textbox" name="other" placeholder="Tell us where." style="visibility:hidden;"/>
+      <br />
+      <br />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Tell us something neat." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+    </form>
+</div>
+      
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53714472.5842433!2d-11.468146133487533!3d17.58264607064446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1494533879756" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div class="social">
+    <table border=0 width=100% align=center>
+        <tr>
+        <td><a href="https://www.youtube.com/user/IdentifyThatPlant"><img src=media/youtube.png height="100px" style="margin: auto>"></a></td>
+        
+        <td><a href="https://www.facebook.com/pages/Plants/114300575253539"><img src="media/facebook.png" height="40px" style="margin-bottom: 5%"></a></td>
+        
+        <td><a href="https://twitter.com/plantsmap"><img src=media/twitter.png height="75px" style="margin-bottom: 2%" ></a></td>
+        
+</table>        
+</div>
+    
+</body>
+</html>
